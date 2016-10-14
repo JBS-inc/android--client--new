@@ -1,7 +1,8 @@
 package com.example.jack.mylibrary;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
@@ -11,6 +12,7 @@ public class AchievementsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_achievements);
+        Intent intent = getIntent();
 
 
         String[] achievements = {"Score","Goal","sufuhgh","jdfhkhdfk","hsdfgsdhf","husdihfuih"};
