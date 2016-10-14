@@ -15,14 +15,14 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-//
-//    public boolean login(){
-//
-//    }
+
+
 
     public void btnLogin (View view){
-        Intent intent = new Intent(LoginActivity.this, AchievementsActivity.class);
-        startActivity(intent);
 
+         Intent intent = new Intent(LoginActivity.this, AchievementsActivity.class);
+         startActivity(intent);
+
+    
     }
 }
