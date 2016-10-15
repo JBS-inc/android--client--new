@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".AchievementsActivity" />
-        <activity android:name=".QRActivity"></activity>
+        <activity android:name=".QRActivity" />
     </application>
 
 </manifest>

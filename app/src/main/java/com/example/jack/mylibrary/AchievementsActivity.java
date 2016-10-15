@@ -23,6 +23,8 @@ public class AchievementsActivity extends AppCompatActivity  {
     }
 
 
+
+
     public void onScan (View view){
         Intent intent = new Intent(AchievementsActivity.this, QRActivity.class);
         startActivity(intent);

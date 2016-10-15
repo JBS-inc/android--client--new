@@ -23,6 +23,6 @@ public class LoginActivity extends AppCompatActivity {
          Intent intent = new Intent(LoginActivity.this, AchievementsActivity.class);
          startActivity(intent);
 
-    
+
     }
 }
