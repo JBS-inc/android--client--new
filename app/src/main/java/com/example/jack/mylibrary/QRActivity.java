@@ -12,6 +12,10 @@ import me.dm7.barcodescanner.zxing.ZXingScannerView;
 public class QRActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
     private ZXingScannerView mScannerView;
 
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +25,7 @@ public class QRActivity extends AppCompatActivity implements ZXingScannerView.Re
         setContentView(mScannerView);
         mScannerView.setResultHandler(this);
         mScannerView.startCamera();
+
     }
 
 

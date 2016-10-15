@@ -47,4 +47,5 @@ dependencies {
     compile 'com.android.support:multidex:1.0.0'
     testCompile 'junit:junit:4.12'
     compile files('C:/Users/jack/Dropbox/myLibrary/android--client--new/libs/FutLibLibrary.jar')
+    compile 'com.mcxiaoke.volley:library:1.0.19'
 }
