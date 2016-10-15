@@ -29,7 +29,22 @@ public class CustomAdapter extends ArrayAdapter<String>{
         TextView achievementTitle = (TextView) customView.findViewById(R.id.achievement_title);
         ImageView achievementScoreImage = (ImageView) customView.findViewById(R.id.achievement_score_image);
         TextView achievementDescription = (TextView) customView.findViewById(R.id.achievement_description);
-
+//
+//        //set paint
+//        Paint paint= new Paint();
+//        paint.setColor(Color.YELLOW);
+//        paint.setStyle(Paint.Style.FILL_AND_STROKE);
+//
+//        //set bitmap
+//        Bitmap bmp = Bitmap.createBitmap(500,500,Bitmap.Config.ARGB_8888);
+//
+//        //Canvas
+//        Canvas canvas = new Canvas(bmp);
+//        canvas.drawCircle(bmp.getWidth()/2, bmp.getHeight()/2, 20, paint );
+//
+//        //output circle
+//        achievementScoreImage.setImageBitmap(bmp);
+//
 
         achievementTitle.setText(achievementItem);
         achievementScoreImage.setImageResource(R.drawable.filler);

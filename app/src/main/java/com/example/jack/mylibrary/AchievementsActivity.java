@@ -20,6 +20,10 @@ public class AchievementsActivity extends AppCompatActivity  {
         ListAdapter CustomAdapter = new CustomAdapter(this, achievements);
         ListView achievementListView = (ListView) findViewById(R.id.achievements_list_view);
         achievementListView.setAdapter(CustomAdapter);
+
+
+
+
     }
 
 

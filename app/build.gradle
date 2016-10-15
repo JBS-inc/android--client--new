@@ -4,13 +4,28 @@ android {
     compileSdkVersion 24
     buildToolsVersion "23.0.3"
     defaultConfig {
+        // Enabling multidex support.
+        multiDexEnabled true
         applicationId "com.example.jack.mylibrary"
         minSdkVersion 15
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+//        jackOptions{
+//            enabled true
+//        }
     }
+
+//    dexOptions{
+//        incremental true
+//    }
+
+//    compileOptions {
+//        sourceCompatibility JavaVersion.VERSION_1_8
+//        targetCompatibility JavaVersion.VERSION_1_8
+//    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -29,5 +44,7 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:24.2.1'
     compile 'me.dm7.barcodescanner:zxing:1.9'
     compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:multidex:1.0.0'
     testCompile 'junit:junit:4.12'
+    compile files('C:/Users/jack/Dropbox/myLibrary/android--client--new/libs/FutLibLibrary.jar')
 }
