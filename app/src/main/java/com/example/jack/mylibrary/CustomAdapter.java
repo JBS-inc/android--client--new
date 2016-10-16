@@ -40,11 +40,12 @@ public class CustomAdapter extends ArrayAdapter<Achievement>{
         TextView achievementTitle = (TextView) customView.findViewById(R.id.achievement_title);
         ImageView achievementScoreImage = (ImageView) customView.findViewById(R.id.achievement_score_image);
         TextView achievementDescription = (TextView) customView.findViewById(R.id.achievement_description);
-
+        //TextView achievementScore = (TextView)
 
         achievementTitle.setText(achievementItem.getName());
         achievementScoreImage.setImageResource(R.drawable.filler);
         achievementDescription.setText(achievementItem.getDesc());
+
         return customView;
     }
 }

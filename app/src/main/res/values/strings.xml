@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">MyLibrary</string>
+    <string name="app_name">Library Go</string>
     <string name="title_activity_achievement">AchievementActivity</string>
 </resources>

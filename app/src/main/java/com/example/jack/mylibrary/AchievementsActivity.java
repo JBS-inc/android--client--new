@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.List;
 
@@ -21,8 +22,10 @@ public class AchievementsActivity extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_achievements);
-
-
+        int points= 0;
+        points = points +handler.getPoints();
+        TextView mPoints   = (TextView)findViewById(R.id.score_points);
+        mPoints.setText("POINTS: "+ points);
 
 
         handler.loadAchievements();
@@ -45,8 +48,10 @@ public class AchievementsActivity extends AppCompatActivity  {
     @Override
     public void onResume() {
         super.onResume();
-
+        TextView mPoints   = (TextView)findViewById(R.id.score_points);
         handler.loadAchievements();
+        mPoints.setText("POINTS: "+ handler.getPoints());
+
 
         List<Achievement> achievements = handler.getAchievements();
 
