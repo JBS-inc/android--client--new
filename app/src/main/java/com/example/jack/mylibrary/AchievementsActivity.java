@@ -29,6 +29,7 @@ public class AchievementsActivity extends AppCompatActivity  {
 
 
         handler.loadAchievements();
+        handler.loadPoints();
         Log.d("Achievement list size", handler.getAchievements().size() + "");
         List<Achievement> achievements = handler.getAchievements();
 
@@ -50,6 +51,7 @@ public class AchievementsActivity extends AppCompatActivity  {
         super.onResume();
         TextView mPoints   = (TextView)findViewById(R.id.score_points);
         handler.loadAchievements();
+        handler.loadPoints();
         mPoints.setText("POINTS: "+ handler.getPoints());
 
 

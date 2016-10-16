@@ -1,7 +1,6 @@
 package com.example.jack.mylibrary;
 
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
@@ -45,11 +44,6 @@ public class QRActivity extends AppCompatActivity implements ZXingScannerView.Re
         Log.d("QR scanning", "" + success);
 
         Log.v("handleResult", result.getText());
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Scan Result");
-        builder.setMessage(result.getText());
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
 
         finish();
     }
