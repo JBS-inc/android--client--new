@@ -12,7 +12,7 @@ import android.widget.EditText;
 import ctrl.UserHandler;
 
 public class LoginActivity extends AppCompatActivity {
-    public static UserHandler handler = new UserHandler("http://138.68.146.164/3000");
+    public static UserHandler handler = new UserHandler("http://138.68.146.164:3000");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
             Intent intent = new Intent(LoginActivity.this, AchievementsActivity.class);
             startActivity(intent);
 
-        }
+      }
 
     }
 }

@@ -9,6 +9,8 @@ import com.google.zxing.Result;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
+import static com.example.jack.mylibrary.LoginActivity.handler;
+
 public class QRActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
     private ZXingScannerView mScannerView;
 
@@ -37,6 +39,11 @@ public class QRActivity extends AppCompatActivity implements ZXingScannerView.Re
     public void handleResult(Result result){
         //Do something with our result here
 
+
+        boolean success = handler.handleQRscan(result.getText());
+
+        Log.d("QR scanning", "" + success);
+
         Log.v("handleResult", result.getText());
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Scan Result");
@@ -44,5 +51,6 @@ public class QRActivity extends AppCompatActivity implements ZXingScannerView.Re
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
 
+        finish();
     }
 }
